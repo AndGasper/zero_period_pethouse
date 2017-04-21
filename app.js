@@ -13,19 +13,19 @@ function App(name = "Learning Pooz"){
         this.createFoodDish(dishes[0]);
         this.createLitterBox(boxes[0]);
     };
-    this.createCat = function(name, optionsObj){
-        var cat = new Cat(name);
-        cat.init(optionsObj);
+    this.createCat = function(catObj){
+        var cat = new Cat(catObj);
+        //
         return cat;
     };
-    this.createDog = function(name, optionsObj){
-        var dog = new Dog(name);
-        dog.init(optionsObj);
+    this.createDog = function(dogObj){
+        var dog = new Dog(dogObj);
+        //
         return dog;
     };
-    this.createToy = function(optionsObj){
+    this.createToy = function(toyObj){
         var toy = new Toy();
-        toy.init(optionsObj); //object containing name, type
+        toy.init(toyObj); //object containing name, type
         return toy;
     };
     this.createFoodDish = function(){
