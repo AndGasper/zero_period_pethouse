@@ -154,7 +154,6 @@ felix.meow("meow");
 
 //*************team cat end********************
 
-}
 
 var testDish = new FoodDish(); // New dish
 console.log("testDish.addFoodToBowl('dog food', 5);", testDish.addFoodToBowl('dog food', 5));
