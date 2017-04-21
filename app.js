@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function Animal(name, age, type){
     this.name = name;
     this.age = age;
@@ -19,6 +20,9 @@ Animal.prototype.litter = function (){
 Animal.prototype.sleep = function (){
 
 };
+
+//*************team cat start************
+
 
 
 //main controller creating pets and governing interactions between pets
@@ -69,7 +73,11 @@ function App(name = "Learning Pooz"){
 //wee code!
 //controller for cat objects
 function Cat(){
-
+   this.meow = function(message){
+       this.say("meow");
+   }
+   this.eat = function (type){
+   }
 }
 
 Dog.prototype = Object.create(Animal.prototype);
@@ -97,6 +105,14 @@ function FoodDish(){
 }
 
 //what goes in, must come out
-function LitterBox(){
-
+function LitterBox() {
 }
+Cat.prototype = Object.create(Animal.prototype);
+var felix = new Cat();
+console.log(felix);
+felix.meow("meow");
+
+
+
+
+//*************team cat end********************
