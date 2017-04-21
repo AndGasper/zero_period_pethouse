@@ -1,3 +1,13 @@
+//*************team cat start************
+
+
+function Animal(){
+    this.age = null;
+    this.name = null;
+}
+Animal.prototype.say = function(message){
+    console.log(message);
+}
 
 //main controller creating pets and governing interactions between pets
 function App(){
@@ -6,7 +16,11 @@ function App(){
 
 //controller for cat objects
 function Cat(){
-
+   this.meow = function(message){
+       this.say("meow");
+   }
+   this.eat = function (type){
+   }
 }
 
 //controller for dog objects
@@ -25,6 +39,12 @@ function FoodDish(){
 }
 
 //what goes in, must come out
-function LitterBox(){
-
+function LitterBox() {
 }
+Cat.prototype = Object.create(Animal.prototype);
+var felix = new Cat();
+console.log(felix);
+felix.meow("meow");
+
+
+//*************team cat end********************
