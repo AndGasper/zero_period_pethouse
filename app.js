@@ -143,8 +143,7 @@ function FoodDish(){
 }
 
 //what goes in, must come out
-function LitterBox() {
-}
+
 Cat.prototype = Object.create(Animal.prototype);
 var felix = new Cat();
 console.log(felix);
@@ -160,4 +159,44 @@ felix.meow("meow");
 var testDish = new FoodDish(); // New dish
 console.log("testDish.addFoodToBowl('dog food', 5);", testDish.addFoodToBowl('dog food', 5));
 console.log(testDish);
+
+
+function LitterBox(animal){
+    this.poopCounter = 0;
+    this.catPoop = 0;
+    this.dogPoop = 0;
+
+    this.poopCounter = catPoop + (dogPoop * 2);
+
+
+    this.hasPoop = false;
+    this.checkPoopLevel = function() {
+        if (this.poopCounter >= 5) {
+            console.error('Litter Box is Full! Clean it out');
+        } else if (this.poopCounter > 2) {
+            console.warn('Your litterbox is half-full');
+        } else
+        needToBeCleaned(this.poopCounter);
+    };
+
+    this.animalPoops = function(animal){
+        var poop = animal.poop();
+        if ()
+
+        this.hasPoop = true;
+    };
+
+    function dumpLitterBox() {
+
+    }
+}
+//
+// var box = new LitterBox();
+// box.receivePoop(fido);
+
+var box = new LitterBox();
+
+var fido = new Dog();
+
+box.receivePoop(fido.depositPoop())
 
