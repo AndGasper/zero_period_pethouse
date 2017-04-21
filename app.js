@@ -75,7 +75,7 @@ function App(name = "Learning Pooz"){
 function Cat(){
    this.meow = function(message){
        this.say("meow");
-   }
+   };
    this.eat = function (type){
    }
 }
@@ -88,7 +88,7 @@ Dog.prototype = Object.create(Animal.prototype);
 function Dog(){
  this.bark = function(message){
      this.speak("Woof!");
- }
+ };
  this.tired = function(){
      this.sleep();
  }
@@ -197,5 +197,5 @@ var box = new LitterBox();
 
 var fido = new Dog();
 
-box.receivePoop(fido.depositPoop())
+// box.receivePoop(fido.depositPoop())
 
