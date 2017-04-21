@@ -21,6 +21,9 @@ function Toy(){
 
 //controller for food dish to supply food to other animals
 function FoodDish(){
+    this.getFood = function() {
+        console.log("Hey! Food");
+    }
 
 }
 
